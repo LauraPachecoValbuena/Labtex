@@ -1,0 +1,15 @@
+<% if (prendas){ %>
+<% for(let i = 0; i < prendas.length; i++){ %>
+<div class="col-4 card border-secondary mb-3 btn-outline-info" id="cardPrenda" style="width: 18rem;">
+    <img class="card-img-top" src="./img/<%= prendas[i].referencia %>.png" alt="">
+    <div class="card-body">
+        <h5 class="card-title"><%= prendas[i].referencia %></h5>
+        <p class="card-text"><%= prendas[i].descripcion %></p>
+        <a href="/delete/<%=prendas[i].idPrenda%>" class="btn btn-info">Delete</a>
+        <a href="/update/<%=prendas[i].idPrenda%>" class="btn btn-info">Edit</a>
+    </div>
+</div>
+<% } %>
+<% } %>
+
+<% include _footer %>

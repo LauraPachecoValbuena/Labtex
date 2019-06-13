@@ -1,0 +1,21 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+
+}
+body {
+    background-color: whitesmoke;
+}
+
+#botonNuevaPrenda {
+    margin-bottom: 40px;
+}
+
+#cardPrenda {
+    margin-top: 20px;
+    box-shadow: 8px 5px lightgrey;
+    font-size: 14pt;
+}
+
+.card-img-top{
+    margin-top: 40px;
+}

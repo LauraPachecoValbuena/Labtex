@@ -1,0 +1,13 @@
+    <!-- <div class="col-5">
+    <form action="/update/<%=prendas.idPrenda%>" method="post">
+       <div class="form-group">
+           <input type="text" name="referencia" value="<%= prendas.referencia %>" placeholder="referencia" class="form-control">
+           <input type="text" name="talla" value="<%= prendas.talla %>" placeholder="talla" class="form-control">
+           <input type="text" name="color" value="<%= prendas.color %>" placeholder="color" class="form-control">
+           <input type="text" name="descripcion" value="<%= prendas.descripcion %>" placeholder="descripcion" class="form-control">
+           <input type="text" name="imagen" value="<%= prendas.imagen %>" placeholder="imagen" class="form-control">
+           
+       </div>
+       <button type="submit" class="btn btn-info">Guardar</button>
+   </form>
+</div>  -->

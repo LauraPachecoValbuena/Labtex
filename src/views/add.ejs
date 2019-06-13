@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="col-5Formulario">
+        <form action="/add" method="post">
+            <div class="form-group">
+                <input type="text" name="referencia" value="" placeholder="referencia" class="form-control">
+                <input type="text" name="talla" value="" placeholder="talla" class="form-control">
+                <input type="text" name="color" value="" placeholder="color" class="form-control">
+                <input type="text" name="descripcion" value="" placeholder="descripcion" class="form-control">
+            </div>
+            <!-- <button type="submit" class="btn btn-info">Save</button> -->
+        </form>
+        
+    </div>
+</div>
+
+<form action='/upload' method="POST" enctype="multipart/form-data">
+    <input type="file" class="btn btn-info" name="file">
+    <input type="submit" class="btn btn-info" value="Subir">
+</form>

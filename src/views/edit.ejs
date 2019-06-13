@@ -1,0 +1,49 @@
+<% include _header %>
+
+<div class="container">
+    <form form action="/update/<%=prendas.idPrenda%>" method="post">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Referencia</label>
+            <input type="text" name="referencia" value="<%= prendas.referencia %>" class="form-control"
+                id="exampleFormControlInput1" placeholder="Referencia">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Talla:</label>
+            <select class="form-control" name="talla" value="<%= prendas.talla %>" id="exampleFormControlSelect1">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Color:</label>
+            <select multiple class="form-control" name="color" value="<%= prendas.color %>"
+                id="exampleFormControlSelect2">
+                <option value="Negro">Negro</option>
+                <option value="Blanco">Blanco</option>
+                <option value="Amarillo">Amarillo</option>
+                <option value="Rosa">Rosa</option>
+                <option value="Azul">Azul</option>
+                <option value="Verde">Verde</option>
+                <option value="Rojo">Rojo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Descripción</label>
+            <textarea class="form-control" name="descripcion" id="exampleFormControlTextarea1"
+                rows="3"><%= prendas.descripcion %></textarea>
+        </div>
+
+        <input type="submit" class="btn btn-info" value="Save">
+
+    </form>
+
+    <script>
+        document.getElementById('exampleFormControlSelect2').value = "<%= prendas.color %>";
+        document.getElementById('exampleFormControlSelect1').value = "<%= prendas.talla %>";
+    </script>
+
+
+    <% include _footer %>
